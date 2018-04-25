@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dictionary>
+  <TableDataSource Name="Customers" ReferenceName="Data.Customers" DataType="System.Int32" Enabled="true">
+    <Column Name="CustomerID" DataType="System.Int32"/>
+    <Column Name="CustomerName" DataType="System.String"/>
+    <Column Name="CustomerLinkMan" DataType="System.String"/>
+    <Column Name="CustomerLinkDetail" DataType="System.String"/>
+  </TableDataSource>
+  <TableDataSource Name="WyInfos" ReferenceName="Data.WyInfos" DataType="System.Int32" Enabled="true">
+    <Column Name="WyID" DataType="System.Int32"/>
+    <Column Name="WyName" DataType="System.String"/>
+    <Column Name="JZArea" DataType="System.Decimal"/>
+    <Column Name="TNArea" DataType="System.Decimal"/>
+    <Column Name="GTArea" DataType="System.Decimal"/>
+    <Column Name="OwnerName" DataType="System.String"/>
+    <Column Name="OwnerDetail" DataType="System.String"/>
+    <Column Name="UNIT_No" DataType="System.Int32"/>
+    <Column Name="FLOOR_No" DataType="System.Int32"/>
+    <Column Name="ROOM_No" DataType="System.Int32"/>
+    <Column Name="CustomerID" DataType="System.String"/>
+  </TableDataSource>
+  <TableDataSource Name="Charge" ReferenceName="Data.Charge" DataType="System.Int32" Enabled="true">
+    <Column Name="CID" DataType="System.Int32"/>
+    <Column Name="PeriodNo" DataType="System.String"/>
+    <Column Name="ChargeTotal" DataType="System.Decimal"/>
+    <Column Name="Abstract" DataType="System.String"/>
+    <Column Name="ChargeStatus" DataType="System.String"/>
+    <Column Name="CustomerID" DataType="System.Int32"/>
+    <Column Name="CustomerName" DataType="System.String"/>
+  </TableDataSource>
+  <TableDataSource Name="ChargeF" ReferenceName="Data.ChargeF" DataType="System.Int32" Enabled="true">
+    <Column Name="CFID" DataType="System.Int32"/>
+    <Column Name="PeriodNo" DataType="System.String"/>
+    <Column Name="ChargeTotal" DataType="System.Decimal"/>
+    <Column Name="Abstract" DataType="System.String"/>
+    <Column Name="ChargeStatus" DataType="System.String"/>
+    <Column Name="CustomerID" DataType="System.Int32"/>
+    <Column Name="CustomerName" DataType="System.String"/>
+    <Column Name="SFPerson" DataType="System.String"/>
+  </TableDataSource>
+  <TableDataSource Name="ChargeDetail" ReferenceName="Data.ChargeDetail" DataType="System.Int32" Enabled="true">
+    <Column Name="CDNo" DataType="System.Int32"/>
+    <Column Name="Abstract" DataType="System.String"/>
+    <Column Name="PeriodNo" DataType="System.String"/>
+    <Column Name="WyID" DataType="System.Int32"/>
+    <Column Name="WyName" DataType="System.String"/>
+    <Column Name="ChargeName" DataType="System.String"/>
+    <Column Name="ChargeStatus" DataType="System.String"/>
+    <Column Name="ChargeUnit" DataType="System.String"/>
+    <Column Name="ChargeNum" DataType="System.Decimal"/>
+    <Column Name="ChargePrice" DataType="System.Decimal"/>
+    <Column Name="ChargeYS" DataType="System.Decimal"/>
+    <Column Name="ChargeSS" DataType="System.Decimal"/>
+    <Column Name="ChargeDate" DataType="null"/>
+    <Column Name="ChargeFDate" DataType="null"/>
+    <Column Name="CID" DataType="System.Int32"/>
+    <Column Name="CFID" DataType="System.Int32"/>
+    <Column Name="RID" DataType="System.Int32"/>
+    <Column Name="WyRateID" DataType="System.Int32"/>
+  </TableDataSource>
+  <Relation Name="Charge_ChargeDetail" ParentDataSource="Charge" ChildDataSource="ChargeDetail" ParentColumns="CID" ChildColumns="CID" Enabled="true"/>
+  <Relation Name="ChargeF_ChargeDetail" ParentDataSource="ChargeF" ChildDataSource="ChargeDetail" ParentColumns="CFID" ChildColumns="CFID" Enabled="true"/>
+  <Total Name="TotalYS" Expression="[ChargeDetail.ChargeYS]" Evaluator="Data2" PrintOn="DataFooter1"/>
+</Dictionary>

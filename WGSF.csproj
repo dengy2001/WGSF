@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{EA197C65-5CF1-4C85-AD59-3327B8DF9B73}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WGSF</RootNamespace>
+    <AssemblyName>WGSF</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ApplicationIcon>图\Building_Management_32px_510567_easyicon.net.ico</ApplicationIcon>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastReport">
+      <HintPath>..\..\绿色软件\fastreport.net\FastReport.Net\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComboBoxTreeView.cs" />
+    <Compile Include="FormAddWyRate.cs" />
+    <Compile Include="FormAddWyRate.Designer.cs">
+      <DependentUpon>FormAddWyRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCharge.cs" />
+    <Compile Include="FormCharge.Designer.cs">
+      <DependentUpon>FormCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChargeAdd.cs" />
+    <Compile Include="FormChargeAdd.Designer.cs">
+      <DependentUpon>FormChargeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChargeSF.cs" />
+    <Compile Include="FormChargeSF.Designer.cs">
+      <DependentUpon>FormChargeSF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckData.cs" />
+    <Compile Include="FormCheckData.Designer.cs">
+      <DependentUpon>FormCheckData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomers.cs" />
+    <Compile Include="FormCustomers.Designer.cs">
+      <DependentUpon>FormCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataBaseSelect.cs" />
+    <Compile Include="FormDataBaseSelect.Designer.cs">
+      <DependentUpon>FormDataBaseSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGuide.cs" />
+    <Compile Include="FormGuide.Designer.cs">
+      <DependentUpon>FormGuide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHisSF.cs" />
+    <Compile Include="FormHisSF.Designer.cs">
+      <DependentUpon>FormHisSF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormImport.cs" />
+    <Compile Include="FormImport.Designer.cs">
+      <DependentUpon>FormImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMeterReading.cs" />
+    <Compile Include="FormMeterReading.Designer.cs">
+      <DependentUpon>FormMeterReading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMeters.cs" />
+    <Compile Include="FormMeters.Designer.cs">
+      <DependentUpon>FormMeters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRates.cs" />
+    <Compile Include="FormRates.Designer.cs">
+      <DependentUpon>FormRates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSF.cs" />
+    <Compile Include="FormSF.Designer.cs">
+      <DependentUpon>FormSF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWyInfos.cs" />
+    <Compile Include="FormWyInfos.Designer.cs">
+      <DependentUpon>FormWyInfos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TabControlWithClose.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormDataBaseSelect.resx">
+      <DependentUpon>FormDataBaseSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHisSF.resx">
+      <DependentUpon>FormHisSF.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <EmbeddedResource Include="Reports\JFPrint.frx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SFPrint.frx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="BLL\BLL.csproj">
+      <Project>{236D809E-4396-4FA6-959D-215E8804D1AA}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="DomainModel\DomainModel.csproj">
+      <Project>{90E3F715-699E-4E65-8EF1-C3C1413AE0BD}</Project>
+      <Name>DomainModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormAddWyRate.resx">
+      <DependentUpon>FormAddWyRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCharge.resx">
+      <DependentUpon>FormCharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChargeAdd.resx">
+      <DependentUpon>FormChargeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChargeSF.resx">
+      <DependentUpon>FormChargeSF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckData.resx">
+      <DependentUpon>FormCheckData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomers.resx">
+      <DependentUpon>FormCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGuide.resx">
+      <DependentUpon>FormGuide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImport.resx">
+      <DependentUpon>FormImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMeterReading.resx">
+      <DependentUpon>FormMeterReading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMeters.resx">
+      <DependentUpon>FormMeters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRates.resx">
+      <DependentUpon>FormRates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSF.resx">
+      <DependentUpon>FormSF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWyInfos.resx">
+      <DependentUpon>FormWyInfos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reports" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

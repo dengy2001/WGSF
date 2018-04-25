@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="DomainModel" assembly="DomainModel">
+	<class name="ChargeDetail" table="ChargeDetail">
+		<id name="CDNo" column="CDNo" >
+			<generator class="increment" />
+		</id>
+		<property name="Abstract" column="Abstract"   />
+		<property name="PeriodNo" column="PeriodNo"  />
+		<property name="WyID" column="WyID"   />
+		<property name="WyName" column="WyName"   />
+		<property name="ChargeName" column="ChargeName"   />
+		<property name="ChargeStatus" column="ChargeStatus"   />
+		<property name="ChargeUnit" column="ChargeUnit"   />
+		<property name="ChargeNum" column="ChargeNum"   />
+		<property name="ChargePrice" column="ChargePrice"   />
+		<property name="ChargeYS" column="ChargeYS"   />
+		<property name="ChargeSS" column="ChargeSS"   />
+		<property name="ChargeDate" column="ChargeDate"   />
+		<property name="ChargeFDate" column="ChargeFDate"   />
+		<property name="CID" column="CID"   />
+		<property name="CFID" column="CFID"   />
+		<property name="RID" column="RID"   />
+		<property name="WyRateID" column="WyRateID"   />
+	</class>
+</hibernate-mapping>

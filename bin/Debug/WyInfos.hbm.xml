@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="DomainModel" assembly="DomainModel">
+	<class name="WyInfos" table="WyInfos">
+		<id name="WyID" column="WyID" >
+			<generator class="increment" />
+		</id>
+		<property name="WyName" column="WyName"  />
+		<property name="JZArea" column="JZArea"   />
+		<property name="TNArea" column="TNArea"   />
+		<property name="GTArea" column="GTArea"   />
+		<property name="OwnerName" column="OwnerName"  />
+		<property name="OwnerDetail" column="OwnerDetail"  />
+		<property name="UNIT_No" column="UNIT_No"  />
+		<property name="FLOOR_No" column="FLOOR_No"  />
+		<property name="ROOM_No" column="ROOM_No"  />
+		<property name="CustomerID" column="CustomerID"  />
+	</class>
+</hibernate-mapping>
